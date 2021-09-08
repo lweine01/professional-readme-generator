@@ -53,14 +53,43 @@ inquirer
   .then((answers) => {
       const readMeFile = 
       `
-      
-      `
+# ${answers.title}
+
+## Table of Contents
+- [Description](#Description)
+- [Installation] (#Installation)
+- [Usage](#Usage)
+- [Contributing](#Contributing)
+- [Tests](#Tests)
+- [License](#License)
+- [Questions](#Questions)
+
+## Description
+${answers.description}
+
+## Installation
+${answers.installation}
+
+## Usage
+${answers.usage}
+
+## Contributing
+${answers.contributing}
+
+## Tests
+${answers.tests}
+
+## License
+${answers.license}
+
+## Questions
+[Link to GitHub Profile](https://github.com/${answers.github})
+Please email me at ${answers.email} with any additional questions.
+      `;
 
     fs.writeFile('README.md', readMeFile, (err) => {
-        if (err) console.log (err);
-        console.log('File successfully created! Great Work.')
-    }
-    )
+         err ?  console.log (err): console.log('File successfully created! Great Work.')
+    });
   })
   .catch((error) => {
     if (error.isTtyError) {
