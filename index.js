@@ -57,7 +57,7 @@ inquirer
 
 ## Table of Contents
 - [Description](#Description)
-- [Installation] (#Installation)
+- [Installation](#Installation)
 - [Usage](#Usage)
 - [Contributing](#Contributing)
 - [Tests](#Tests)
@@ -83,28 +83,22 @@ ${answers.tests}
 ${answers.license}
 
 ## Questions
-[Link to GitHub Profile](https://github.com/${answers.github})
+[Link to GitHub Profile](https://github.com/${answers.github})<br/>
 Please email me at ${answers.email} with any additional questions.
       `;
 
     fs.writeFile('README.md', readMeFile, (err) => {
          err ?  console.log (err): console.log('File successfully created! Great Work.')
     });
-  })
-  .catch((error) => {
-    if (error.isTtyError) {
-    } else {
-      // Something else went wrong
-    }
   });
-// TODO: Create an array of questions for user input
-const questions = [];
+// // TODO: Create an array of questions for user input
+// const questions = [];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// // TODO: Create a function to write README file
+// function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-function init() {}
+// // TODO: Create a function to initialize app
+// function init() {}
 
-// Function call to initialize app
-init();
+// // Function call to initialize app
+// init();
