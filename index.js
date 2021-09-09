@@ -1,5 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const genMark = require('./generateMarkdown');
+
 const questions = [
     {
         type: 'input',
@@ -52,49 +54,12 @@ const questions = [
 inquirer
   .prompt(questions)
   .then((answers) => {
-
-      const readMeFile = 
-      `
-      # ${answers.title}
+    genMark.generateMarkdown(answers);
       
-      ## Table of Contents
-      - [Description](#Description)
-      - [Installation](#Installation)
-      - [Usage](#Usage)
-      - [Contributing](#Contributing)
-      - [Tests](#Tests)
-      - [License](#License)
-      - [Questions](#Questions)
-      
-      ## Description
-      ${answers.description}
-      
-      ## Installation
-      ${answers.installation}
-      
-      ## Usage
-      ${answers.usage}
-      
-      ## Contributing
-      ${answers.contributing}
-      
-      ## Tests
-      ${answers.tests}
-      
-      ## License
-      ${answers.license}
-      
-      ## Questions
-      [Link to GitHub Profile](https://github.com/${answers.github})<br/>
-      Please email me at ${answers.email} with any additional questions.
-      `;
-      
-      fs.writeFile('README.md', readMeFile, (err) => {
+      fs.writeFile('GENREADME.md', readMeFile, (err) => {
           err ?  console.log (err): console.log('File successfully created! Great Work.')
         });
   });
-// // TODO: Create an array of questions for user input
-// const questions = [];
 
 // // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
