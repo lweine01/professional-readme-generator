@@ -5,6 +5,7 @@
 - [Description](#Description)
 - [Usage](#Usage)
 - [Walkthrough](#Walkthrough)
+- [Screenshot](#Screenshot)
 - [License](#License)
 - [Questions](#Questions)
 
@@ -14,8 +15,11 @@ This is an application where the user is able to imput answers using the command
 ## Usage
 To create a professional README file via the command-line.
 
-
 ## Walkthrough
+[Link to Video](https://drive.google.com/file/d/1YdUHkKGN6EVMKLURyIjGSJAVK0VRDDU9/view)
+
+## Screenshot
+![screenshot](assets/images/screenshot.png)
 
 
 ## License

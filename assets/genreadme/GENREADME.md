@@ -1,4 +1,4 @@
-# df
+# README Generator
   
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
@@ -12,24 +12,24 @@
 - [Questions](#Questions)
 
 ## Description
-dg
+This application allows the user to quickly generate a professional looking readme page.
 
 ## Installation
-dfgdsfg
+npm install
 
 ## Usage
-dfgdfg
+To create a README page
 
 ## Contributing
-dfg
+GitHub repository link
 
 ## Tests
-dfg
+npm test
 
 ## License
 Link to your license [MIT](https://opensource.org/licenses/MIT)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Questions
-[Link to GitHub Profile](https://github.com/rtg)<br/>
-Please email me at rb with any additional questions.
+[Link to GitHub Profile](https://github.com/lweine01)<br/>
+Please email me at lauraRWeiner@gmail.com with any additional questions.
