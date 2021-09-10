@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const genMark = require('./generateMarkdown');
+const generateMarkdown = require('./generateMarkdown');
 
 const questions = [
     {
@@ -49,23 +49,14 @@ const questions = [
         name: 'email',
         message: 'What email address would you like to be contacted at?'
     }
-  ];
+  ]
 
 inquirer
   .prompt(questions)
-  .then((answers) => {
-    genMark.generateMarkdown(answers);
+  .then((response) => {
+    generateMarkdown(response);
       
-      fs.writeFile('GENREADME.md', readMeFile, (err) => {
-          err ?  console.log (err): console.log('File successfully created! Great Work.')
-        });
+    fs.writeFile('GENREADME.md', generateMarkdown(response), 'utf-8', (err) => {
+        err ?  console.log (err): console.log('File successfully created! Great Work.')
+    });
   });
-
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
