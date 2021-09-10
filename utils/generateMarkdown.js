@@ -1,5 +1,6 @@
 const generateMarkdown = (answers) => {
   return `# ${answers.title}
+  
 ${renderLicenseBadge(answers.license)}
   
 ## Table of Contents
