@@ -21,7 +21,6 @@ To create a professional README file via the command-line.
 ## Screenshot
 ![screenshot](assets/images/screenshot.png)
 
-
 ## License
 MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
